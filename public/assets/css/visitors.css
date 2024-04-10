@@ -1,0 +1,62 @@
+#left {
+    margin: 0px;
+    position: static;
+    width: 300px;
+    height: 100px
+}
+
+div.middle{
+    position: static;
+    margin:20%;
+    margin-top: 100px;
+    margin-bottom: 0%;
+    color: azure;
+    border: black;
+    border-style: double;
+    border-width: 2px;
+    padding: 50px;
+}
+
+
+#p01 {
+    font-family: 'Calistoga', cursive;
+    font-size: 2vw;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+.btn_space_left{
+    text-align: center;
+    margin-right: 25%;
+}
+
+.btn_space_right{
+    text-align: center;
+}
+
+body {
+    background-color: ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 10% 10%;
+    
+  }
+  
+  .button-container {
+    margin: 20px;
+    text-align: right;
+}
+
+.custom-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
