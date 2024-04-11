@@ -24,6 +24,16 @@
 
 <body style="background-color: beige;">
 
+<div>
+@if($errors->any())
+<ul>
+    @foreach($errors->all() as $error)
+	   <li> {$error}</li>
+	@endforeach
+</ul>
+
+@endif
+</div>
 
 	<div class="middle">
 
@@ -54,7 +64,8 @@
 				</div>
 				<div class="modal-body">
 
-					<form class="form-horizontal" action="entry.php" method="POST">
+					<form class="form-horizontal" action="{{route('home')}}" method="POST">
+					@csrf
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="name" style="color:white;">Name:</label>
 							<div class="col-sm-10">
@@ -159,7 +170,8 @@
 				</div>
 				<div class="modal-body">
 
-					<form class="form-horizontal" action="exit.php" method="POST">
+					<form class="form-horizontal" action= "{{route('home')}}" method="POST">
+					@csrf
 						<div class="form-group">
 							<label class="control-label col-sm-2" for="name" style="color:white;">UserId:</label>
 							<div class="col-sm-10">

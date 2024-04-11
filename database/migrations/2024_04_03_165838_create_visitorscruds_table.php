@@ -20,17 +20,22 @@ return new class extends Migration
             $table->string("HostEmail");
             $table->string("HostPhone");
             $table->string("Address");
-            $table->string("Departure")->default("inside");
+            $table->string("Departure");
             $table->string("Arrival");
             $table->timestamps();
         });
+
+        
     }
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('visitorscruds');
+        Schema::dropIfExists('visitorscrud');
+
     }
+
 };
